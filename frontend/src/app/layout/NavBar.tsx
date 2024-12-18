@@ -1,7 +1,7 @@
 import { observer } from "mobx-react-lite";
 import React from "react";
 import { Link, NavLink } from "react-router-dom";
-import {  Container,  Menu,  Image,  Dropdown } from "semantic-ui-react";
+import {  Container,  Menu,  Image,  Dropdown, Icon } from "semantic-ui-react";
 import { useStore } from "../stores/store";
 import { useTranslation } from "react-i18next";
 
@@ -14,12 +14,13 @@ export default observer(function NavBar() {
   return (
     <Menu inverted fixed="top" secondary stackable>
       <Container className="full-width">
-      <Image
+      {/* <Image
             size="massive"
-            src="/assets/logo_rtlg.png"
+            src="/assets/chemistry-icon-vector-3167070.avif"
             alt="logo"
             style={{ width: 140, marginBottom: 2 }}
-          />
+          /> */}
+        <Icon name="balance scale" size="huge" color={"teal"} />
         {!isLoggedIn && t("login.learn_more", {ns: "users"})}
         {isLoggedIn ? (
           <>

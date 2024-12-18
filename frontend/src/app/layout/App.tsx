@@ -48,7 +48,6 @@ function App() {
       <ToastContainer position="bottom-right" hideProgressBar />
       <>
         <NavBar />
-        <NavBar />
           <Container style={{ marginTop: '7em' }}>
             <Outlet />
           </Container>
