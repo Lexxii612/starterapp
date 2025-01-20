@@ -20,7 +20,7 @@ export default observer(function NavBar() {
             alt="logo"
             style={{ width: 140, marginBottom: 2 }}
           /> */}
-        <Icon name="balance scale" size="huge" color={"teal"} />
+        <Icon name="balance scale" size="big" color={"grey"} />
         {!isLoggedIn && t("login.learn_more", {ns: "users"})}
         {isLoggedIn ? (
           <>
@@ -44,7 +44,6 @@ export default observer(function NavBar() {
           </>
         ) : (
           <Menu.Item position="right" className="navbar-color">
-            {" "}
             {t("login.application_online",{ns: "users"})}{" "}
           </Menu.Item>
         )}

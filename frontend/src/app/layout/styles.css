@@ -4,13 +4,13 @@ body {
   font-size: 1rem;
   font-weight: 400;
   line-height: 1.5;
-  color: #212529;
+  color:rgba(255, 255, 255, 0.5);
   text-align: left;
   background-color: #fff;
 }
 
 .ui.inverted.top.fixed.menu {
-  background-color: rgb(52, 58, 64) !important;
+  background-color: rgb(48, 3, 63) !important;
 }
 
 .react-calendar {
