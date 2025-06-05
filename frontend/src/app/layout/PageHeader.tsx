@@ -4,13 +4,15 @@ import { Divider, Header } from 'semantic-ui-react';
 
 interface Props {
     header: string;
+    type: string;
+    divider?: boolean;
 }
 
-export default observer(function PageHeader({header}: Props) {
+export default observer(function PageHeader({header, type, divider}: Props) {
     return (
 		<>
-            <Header as='h1' content={header} className='pageheader' />
-			<Divider />
+            <Header as={type} content={header} className='pageheader' />
+			{divider && <Divider />}
 		</>
     )
 })
